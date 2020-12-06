@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+  width: 10%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+body {
+  background-image: url("https://64.media.tumblr.com/7c4dcee269a40a2671aa4b8a755bc029/30cf072056e70088-72/s1280x1920/88142a758455c42906b8f48af13f5128887e932d.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+div.second {
+  z-index: -2;;
+}
+
+div.relative {
+  position: relative;
+  width: auto;
+  height: auto;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: auto;
+  width: 60%;
+  height: 100px;
+}
+
+
+.right {
+  position: absolute;
+  left: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="sticky">
+  <img  src="https://64.media.tumblr.com/4258b49792c10b64f84a004bc48a6fcc/0255212f045b87a0-6a/s1280x1920/8da2a2de1c1302b4faa4ab0ccbb43d08665d87f6.jpg"
+  style="width:80%"> </div>
+  <h2>WECOULDBETOGETHER</h2>
+<div class="absolute">
+<div class="left">
+<div class="second">
+  <img src="https://64.media.tumblr.com/25dec8d7565a26ac94329d7dc1490b65/5c8dcde04d5e5039-ed/s1280x1920/5ffcb0f8f98c6ce9f897c07ce9d643c08f5223b8.png"
+  style="width:200%">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="header">
+<div class="sticky">
+  <h2>WECOULDBETOGETHER</h2> </div>
+</div>
+
+
+<div class="row">
+  <div class="column side" ></div>
+  
+ 
+  <div class="column middle" >
+  <div class="relative">
+  <div class="center">
+  <img	src="https://64.media.tumblr.com/475c6d3c3dddceae0e1e8c781391601e/565243e877f664e6-d6/s1280x1920/dcb9d73d4ea633221d6edd49bb778d4312c87da2.jpg"
+  style="width:70%">
+	</div>
+  </div>
+  </div>
+  
+  <div class="column side">
+</div>
+
+
+
+<div class="sticky">
+<div class="second">
+<div class="absolute">
+  <img src="https://64.media.tumblr.com/0dccb3e8d68f5260c95cf6981456ae75/656432b838640acb-ce/s1280x1920/3e2537f50d8d6385ecf5815450e3be10e267245c.png"
+  style="width:60%">
+  </div>
+  </div>
+  </div>
+  
+
+<div class="header">
+<div class="sticky">
+  <h2>___</h2> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="column side" ></div>
+  
+  <div class="column middle" >
+  <div class="relative">
+  <div class="second">
+  <div class="center">
+  <img	src="https://64.media.tumblr.com/44ea5523ebcd88de2851a7dc82678206/22d7171edfca7e1e-f6/s1280x1920/4e01d43750af022e8f512011cda432006446abdb.jpg"
+  style="width:70%">
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="column side" ></div>
+</div>
+
+
+<div class="sticky">
+<div class="absolute">
+<div class="left">
+  <img src="https://64.media.tumblr.com/25dec8d7565a26ac94329d7dc1490b65/5c8dcde04d5e5039-ed/s1280x1920/5ffcb0f8f98c6ce9f897c07ce9d643c08f5223b8.png"
+  style="width:200%"
+  >
+  </div>
+  </div>
+  </div>
+
+
+<div class="header">
+<div class="sticky">
+  <h2>JUSTLIKEYOUREMEMBER</h2> </div>
+</div>
+</div>
+
+
+</body>
+</html>
+
